@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html data-ng-app="TestApplication">
+    <head>
+        <title>Test Application</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.min.js"></script>
+        <script src="scripts/mainScript.js"></script>
+        <!-- link rel="stylesheet" href="https://bootswatch.com/simplex/bootstrap.min.css" -->
+        <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+    </head>
+    <body>
+        <!--div class="container-fluid"-->
+        <div class="container">
+            <div class="col-xs-12">
+                <h1>Cool Website Dude!</h1>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li role="presentation"><a href="#">Sadio Mane</a></li>
+                            <li>Roberto Firmino</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-7">
+                        <p>
+                            Liverpool FC was established in 1892 at Anfield Road end. 
+                            It is the most successful football club in England, having 18 domestic league titles
+                            and 5 European titles.
+                        </p>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <img class="img-responsive" src="images/liverpool-crest.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>Sadio Mane</h3>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            He is a Senegalese Winger who plays for Liverpool FC. 
+                            He was bought at 30 million pounds from Southampton FC.
+                            He is a candidate for the player of the season honours at LFC.
+                            He is a Klopp favourite. 
+                        </p>
+                    </div>
+                    <div class="col-sm-1">
+                        <span class="glyphicon glyphicon-heart hidden-xs" style="color: red"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>Roberto Firmino</h3>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            He is a Brazilian Forward who plays for Liverpool FC. 
+                            He was bought at 29 million pounds from TSG Hoffenheim.
+                            He is a crowd favourite and you will often see the Kop singing
+                            "Bobby Firmino! <i>clap clap clap clap clap</i>" 
+                        </p>
+                    </div>
+                    <div class="col-sm-1">
+                        <span class="glyphicon glyphicon-ok hidden-xs" style="color: green"></span>
+                    </div>
+                </div>
+                <div data-ng-view></div>
+            </div>
+        </div>
+    </body>
+</html>

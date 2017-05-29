@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="row form-group">
+        <input type="text" class="form-control" id="searchPlayers" 
+            placeholder="Search Players" data-ng-model="searchPlayers"/>
+    </div>
+    <table class="row table table-striped table-hover">
+        <tbody>
+            <tr>
+                <th>Jersey</th>
+                <th>Player</th>
+                <th>Games</th>
+                <th>Substitutes</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Clean Sheets</th>
+                <th>Yellow Cards</th>
+                <th>Red Cards</th>
+            </tr>
+            <tr data-ng-repeat="item in data | filter:searchPlayers" data-ng-click="viewPlayer(item.jersey)"> 
+                <td>{{item.jersey}}</td>
+                <td>{{item.player}}</td>
+                <td>{{item.games}}</td>
+                <td>{{item.substitutes}}</td>
+                <td>{{item.goals}}</td>
+                <td>{{item.assists}}</td>
+                <td>{{item.cleanSheets}}</td>
+                <td>{{item.yellowCards}}</td>
+                <td>{{item.redCards}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row form-group">
+            <button class="btn" data-ng-click="addPlayer()">Add Player</button>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Head First JavaScript Programming</title>
+    </head>
+    <body>
+        <script src="chapterOne.js"> 
+            alert("Om namah shivaay"); // DOES NOT WORK!
+        </script>
+        <!-- 
+            The above script gets loaded even if this index.html is not running on a server.
+            This means that script tag takes in relative path irrespective of where it is.
+
+            Also, you cannot put in any JavaScript code inside <script> tag's body if you have included 
+                'src' attribute. 
+         -->
+
+         <script> 
+            alert("Om Ganapataye namah"); // THIS WORKS!
+        </script>
+    </body>
+</html>
