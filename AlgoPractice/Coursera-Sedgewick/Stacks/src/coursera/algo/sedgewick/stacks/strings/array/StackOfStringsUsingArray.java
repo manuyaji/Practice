@@ -35,7 +35,8 @@ public class StackOfStringsUsingArray implements Stack<String> {
 		double dTop = 1.0*top;
 		double dLim = 1.0*arr.length/4;
 		if(dTop < dLim){
-			String[] newArr = new String[top*2];
+			int size = (top == -1 || top == 0)?10:top*2;
+			String[] newArr = new String[size];
 			for(int i=0; i<=top; i++){
 				newArr[i] = arr[i];
 			}

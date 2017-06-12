@@ -37,7 +37,8 @@ public class StackOfGenericsUsingArray<T> implements Stack<T>,Iterable<T> {
 		double dTop = 1.0*top;
 		double dLim = 1.0*arr.length/4;
 		if(dTop < dLim){
-			T[] newArr = (T[])new Object[top*2];
+			int size = (top == -1 || top == 0)?10:top*2;
+			T[] newArr = (T[])new Object[size];
 			for(int i=0; i<=top; i++){
 				newArr[i] = arr[i];
 			}
