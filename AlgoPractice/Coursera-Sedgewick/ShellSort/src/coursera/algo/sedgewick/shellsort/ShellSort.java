@@ -37,7 +37,7 @@ public class ShellSort<T extends Comparable<T>> {
 	}
 	
 	public static void main(String args[]){
-		ShellSort2<Integer> intSort = new ShellSort2<>();
+		ShellSort<Integer> intSort = new ShellSort<>();
 		Integer[] arr = (Integer[])intSort.sort(new Integer[]{10,54,64,12,63,13,68});
 		displayIntArray(arr);
 		System.out.println();
